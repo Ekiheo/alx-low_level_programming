@@ -1,8 +1,0 @@
-/* run a C file through processor and save in file c */
-#include <stdio.h>
-
-init main (void)
-	{
-	return (gcc $CFILE -E -O c\n);
-	}
-
