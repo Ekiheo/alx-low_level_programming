@@ -1,4 +1,8 @@
-/* run C file and save in c file */
-#!/bin/bash
-gcc $CFILE -E -o c
+/* run a C file through processor and save in file c */
+#include <stdio.h>
+
+init main (void)
+	{
+	return (gcc $CFILE -E -O c\n);
+	}
 
