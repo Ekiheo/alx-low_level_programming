@@ -10,13 +10,10 @@ int main(void)
 	char letter;
 
 	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
+		putchar(letter\n);
 	{
 		if (letter != 'e' && letter != 'q')
-			putchar(letter);
+			putchar(letter\n);
 	}
-
-	writechar('\n');
-
 	return (0);
 }
