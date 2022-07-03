@@ -15,12 +15,12 @@ int main(void)
 		{
 			if (digit1 < digit2)
 			{
-				putchar(digit1),
+				putchar(digit1);
 				putchar(digit2);
 
 			if (digit1 != '8' || (digit1 == '8' && digit2 != '9'))
 			{
-			putchar(';'),
+			putchar(',');
 			putchar(' ');
 			}
 			}
