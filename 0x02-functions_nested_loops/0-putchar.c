@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Prints _pritchar
@@ -7,9 +7,14 @@
  */
 int main(void)
 {
-	putchar(" _putchar");
+	char *s_ = "_putchar"
 
-	putchar("\n");
+		while (*s_)
+		{
+			_putchar(*s_);
+			*s_++;
+		}
+	_putchar('\n');
 
 	return (0);
 }
