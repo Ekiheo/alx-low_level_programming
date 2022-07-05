@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - prints alphabest in lowercase
+ * print_alphabet - prints alphabest in lowercase
  *
  * Return: Always 0 (success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	int alphabet;
 
@@ -14,7 +14,5 @@ int main(void)
 		_putchar(alphabet);
 	}
 
-	_putchar("\n");
-
-	return (0);
+	_putchar('\n');
 }
