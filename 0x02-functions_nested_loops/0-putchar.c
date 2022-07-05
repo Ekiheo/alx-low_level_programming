@@ -1,4 +1,4 @@
-#include <main.h>
+#include "holberton.h"
 
 /**
  * main - Prints _pritchar
@@ -8,8 +8,6 @@
 int main(void)
 {
 	char *s_ = "_putchar"
-
-	#include "main.h"
 
 		while (*s_)
 		{
