@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	int 1 = 0;
+	int i = 0;
 	long j = 1, k = 2;
 
-	while (1 < 50)
+	while (i < 50)
 	{
 		if (i == 0)
 			printf("%ld", j);
@@ -20,7 +20,7 @@ int main(void)
 		{
 			k += j;
 			j = k - j;
-			printf(", %ld" k);
+			printf(", %ld", k);
 		}
 		++i;
 	}
