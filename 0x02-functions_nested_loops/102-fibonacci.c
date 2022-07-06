@@ -14,13 +14,19 @@ int main(void)
 	{
 		if (i == 0)
 			printf("%ld", j);
-		else if (i == 1)
-			printf(", %kld", k);
+		else if	(i == 1)
+		{
+			printf(",");
+			printf(" ");
+			printf("%ld", k);
+		}
 		else
 		{
 			k += j;
 			j = k - j;
-			printf(", %ld", k);
+			printf(",");
+			printf(" ");
+			printf("%ld", k);
 		}
 		++i;
 	}
