@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	char *s_ = "_putchar"
+	char *s_ = "_putchar";
 
-		while (*s_)
-		{
-			_putchar(*s_);
-			*s_++;
-		}
+	while (*s_)
+	{
+		_putchar(*s_);
+		*s_++;
+	}
 	_putchar('\n');
 
 	return (0);
