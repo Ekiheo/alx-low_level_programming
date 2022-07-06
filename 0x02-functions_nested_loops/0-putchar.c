@@ -8,7 +8,6 @@
 int main(void)
 {
 	char *s_ = "_putchar"
-	#include "main.h"
 
 		while (*s_)
 		{
