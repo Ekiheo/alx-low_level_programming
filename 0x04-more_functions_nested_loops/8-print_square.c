@@ -7,7 +7,7 @@
  */
 void print_square(int size)
 {
-	if co, ro;
+	int co, ro;
 
 	if (size <= 0)
 	{
