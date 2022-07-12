@@ -1,28 +1,34 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _atoi - checks code for school students
- * @s: pointer char type
- *  Return: Always 0 (success)
+ * _atoi - converts a string into an interger
+ * @s: string being converted
+ *  Return: int
  */
 int _atoi(char *s)
 {
-	int i, j, n, m;
+	int i = 0;
+	int n = 0;
+	int signo = 1;
 
-	i = n = 0;
-	m = 1;
-	while ((*(s + i) < '0' || *(s + i) > '9') && (*(s + i) != '\0'))
+	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
 	{
-		if (*(s + i) == '-')
-			m *= -1;
+		if (s[i] == '-')
+			signo *= -1;
 		i++;
 	}
-	j = i;
-	while ((*(s + j) >= '0') && (*(s + j) <= '9'))
+	while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
 	{
-		n = n * 10 + m * (*(s + j) - '0');
-		j++;
+		if (n >= 0)
+		{
+			n = n * 10 - (s[i] - '0');
+		}
+		else
+		{
+			n = n * 10 - (s[i] - '0');
+			i++;
+		}
 	}
-	return (0);
+	signo *= -1;
+	return (n * signo);
 }
