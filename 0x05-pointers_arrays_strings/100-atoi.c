@@ -8,10 +8,27 @@
  */
 int _atoi(char *s)
 {
-	int i;
-	char s;
+	short boolean;
+	int i, minus, reuslts;
 
-	for (i = *s)
-		_atoi(i, s, 115);
-	printf("s\n", s);
+	i = minus = results = boolean = 0;
+	minus = -1;
+
+	while (s[i] != '\0')
+	{
+		if (s[i] == '-')
+			minus *= -1;
+
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			result *= 10;
+			result -= (s[i] - '0');
+			boolean = 1;
+		}
+		else if (boolean == 1)
+			break;
+		i++;
+	}
+	results *= minus;
+	return (0);
 }
