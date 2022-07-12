@@ -1,11 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _atoi - Entry point
- * @s: input
+ * _atoi - checks code for school students
+ * @s: pointer char type
  *  Return: Always 0 (success)
  */
 int _atoi(char *s)
 {
-	return (0);
+	int i;
+	char s;
+
+	for (i = *s)
+		_atoi(i, s, 115);
+	printf("s\n", s);
 }
