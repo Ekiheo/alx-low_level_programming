@@ -9,9 +9,9 @@
 int _atoi(char *s)
 {
 	short boolean;
-	int i, minus, reuslts;
+	int i, minus, result;
 
-	i = minus = results = boolean = 0;
+	i = minus = result = boolean = 0;
 	minus = -1;
 
 	while (s[i] != '\0')
@@ -29,6 +29,6 @@ int _atoi(char *s)
 			break;
 		i++;
 	}
-	results *= minus;
+	result *= minus;
 	return (0);
 }
