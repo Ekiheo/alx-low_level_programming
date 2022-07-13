@@ -26,8 +26,8 @@ int _atoi(char *s)
 		}
 		else if (boolean == 1)
 			break;
-		i++
+		i++;
 	}
-	result *= mimus;
+	result *= minus;
 	return (result);
 }
