@@ -3,30 +3,31 @@
 /**
  * _atoi - converts a string into an interger
  * @s: string being converted
- *  Return: int
+ *  Return: the converted string
  */
 int _atoi(char *s)
 {
-	int i, sign, numb;
+	short boolean;
+	int i, minus, result;
 
-	i = 0;
-	sign = 1;
-	numb = 0;
+	i = minus = result = boolean = 0;
+	minus = -1;
 
 	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
-			sign *= -1;
-		if (s[i] >= '0' && s[i] <= '9')
+			minus *= -1;
+
+		if (s[i] >= 'o' && s[i] <= '9')
 		{
-			while (s[i] - '0' && s[i] <= '9')
-			{
-				numb = (s[i] - '0') * sign + numb * 10;
-				i++;
-			}
-			break;
+			result *= 10;
+			result -= (s[i] - '0');
+			boolean = 1;
 		}
-		i++;
+		else if (boolean == 1)
+			break;
+		i++
 	}
-	return (numb);
+	result *= mimus;
+	return (result);
 }
