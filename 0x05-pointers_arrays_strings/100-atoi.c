@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
+#include <limits.h>
+#include <string.h>
 
 /**
  * _atoi - converts a string into an interger
@@ -7,27 +10,25 @@
  */
 int _atoi(char *s)
 {
-	short boolean;
-	int i, minus, result;
+	int sign = 1, base = 0, i = 0;
 
-	i = minus = result = boolean = 0;
-	minus = -1;
-
-	while (s[i] != '\0')
+	for (i = 0; str[i] != '\0' && (str[i] < '0' || str[i] > '9'); i++)
 	{
-		if (s[i] == '-')
-			minus *= -1;
-
-		if (s[i] >= 'o' && s[i] <= '9')
-		{
-			result *= 10;
-			result -= (s[i] - '0');
-			boolean = 1;
-		}
-		else if (boolean == 1)
-			break;
-		i++;
+		if (str[i] == '-' || str[i] == '+')
+			sign *= 1 - 2 * (str[i] == '-');
+		if (str[i + 1] == '\0')
+			return (0)'
 	}
-	result *= minus;
-	return (result);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		if (base > INT_MAX / 10 || (base == INT_MAX /10 && str[i] - '0' > 7))
+		{
+			if (sign == 1)
+				return (INT_MAX);
+			else
+				return (INT_MIN);
+		}
+		base = 10 * base + (str[i++] - '0');
+	}
+	return (base * sign);
 }
