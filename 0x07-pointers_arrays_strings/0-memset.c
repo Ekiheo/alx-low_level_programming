@@ -7,7 +7,7 @@
  * @n: number of bytes to be filled
  * Return: pointer to s string
  */
-char *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
