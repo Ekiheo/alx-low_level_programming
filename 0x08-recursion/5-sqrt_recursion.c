@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt_checking_check - checks for natural square root of a number
+ * sqrt_checking - checks for natural square root of a number
  * @x: same as n
  * @y: iterating number
  *
