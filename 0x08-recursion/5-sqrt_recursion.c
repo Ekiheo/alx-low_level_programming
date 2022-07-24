@@ -21,7 +21,7 @@ int sqrt_checking(int x, int y)
  *
  * Return: if success 1, -1 if failed
  */
-_sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	return (sqrt_checking(n, 1));
 }
