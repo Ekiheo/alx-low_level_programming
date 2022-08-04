@@ -3,7 +3,7 @@
 
 /**
  * print_name - a function that prints a name
- * @name - char string
+ * @name: char string
  * @f: function
  */
 void print_name(char *name, void (*f)(char *))
